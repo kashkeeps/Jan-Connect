@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core Colors */
+    --color-background: #F8FAFC; /* slate-50 */
+    --color-foreground: #1F2937; /* gray-800 */
+    --color-border: #E5E7EB; /* gray-200 */
+    --color-input: #FFFFFF; /* white */
+    --color-ring: #1E40AF; /* blue-800 */
+    
+    /* Card Colors */
+    --color-card: #FFFFFF; /* white */
+    --color-card-foreground: #1F2937; /* gray-800 */
+    
+    /* Popover Colors */
+    --color-popover: #FFFFFF; /* white */
+    --color-popover-foreground: #1F2937; /* gray-800 */
+    
+    /* Muted Colors */
+    --color-muted: #F1F5F9; /* slate-100 */
+    --color-muted-foreground: #6B7280; /* gray-500 */
+    
+    /* Primary Colors */
+    --color-primary: #1E40AF; /* blue-800 */
+    --color-primary-foreground: #FFFFFF; /* white */
+    
+    /* Secondary Colors */
+    --color-secondary: #059669; /* emerald-600 */
+    --color-secondary-foreground: #FFFFFF; /* white */
+    
+    /* Destructive Colors */
+    --color-destructive: #DC2626; /* red-600 */
+    --color-destructive-foreground: #FFFFFF; /* white */
+    
+    /* Accent Colors */
+    --color-accent: #1E40AF; /* blue-800 */
+    --color-accent-foreground: #FFFFFF; /* white */
+    
+    /* Success Colors */
+    --color-success: #10B981; /* emerald-500 */
+    --color-success-foreground: #FFFFFF; /* white */
+    
+    /* Warning Colors */
+    --color-warning: #F59E0B; /* amber-500 */
+    --color-warning-foreground: #1F2937; /* gray-800 */
+    
+    /* Error Colors */
+    --color-error: #EF4444; /* red-500 */
+    --color-error-foreground: #FFFFFF; /* white */
+    
+    /* Additional Theme Colors */
+    --color-surface: #FFFFFF; /* white */
+    --color-text-primary: #1F2937; /* gray-800 */
+    --color-text-secondary: #6B7280; /* gray-500 */
+  }
+
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
